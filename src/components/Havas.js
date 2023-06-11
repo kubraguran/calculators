@@ -75,8 +75,11 @@ function Havas() {
 
   return (
     <div className="container">
+ 
       <div className="row">
+        
         <div className="col-lg-6 mx-auto">
+        <h5>Havas Calculator</h5>
           <div className="my-4">
             <div className="form-group">
               <label htmlFor="time">Time:</label>
@@ -90,6 +93,7 @@ function Havas() {
               <label htmlFor="tool">Tool:</label>
               <input type="text" className="form-control" id="tool" value={tool} onChange={(e) => setTool(e.target.value)} />
             </div>
+            <br/>
             <button className="btn btn-primary" id="calculate-btn" onClick={calculate}>Calculate</button>
           </div>
         </div>
