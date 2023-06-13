@@ -4,6 +4,7 @@ import Havas from './components/Havas';
 import AirCalc from './components/AirCalc';
 import AirDensity from './components/AirDensity';
 import AirVelocity from './components/AirVelocity';
+import Converter from './components/Convertor';
 
 function App() {
   return (
@@ -23,6 +24,14 @@ function App() {
       <Col>
       <AirVelocity />
       </Col>
+      </Row>
+      <Row>
+        <Col>
+        <Converter/>
+        </Col>
+        <Col>
+        he
+        </Col>
       </Row>
     </Container>
   );
