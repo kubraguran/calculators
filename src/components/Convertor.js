@@ -56,7 +56,7 @@ function Converter() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-lg-6">
+        <div className="col-lg-6 mx-auto">
           <h1>Unit Converter</h1>
 
           <div className="form-group">
@@ -67,68 +67,51 @@ function Converter() {
               value={inputValue}
               onChange={handleInputChange}
             />
-          </div>
 
-          <div className="text-center">
-            <button className="btn btn-primary" onClick={convertValues}>
-              Convert
-            </button>
-            <button className="btn btn-secondary ml-2" onClick={resetValues}>
-              Reset
-            </button>
-          </div>
-        </div>
-
-        <div className="col-lg-6">
-          <h3>Conversion Results</h3>
-
-          <div className="row">
-            <div className="col-md-6">
-              <div>
-                <strong>Inches:</strong> {inches}
-              </div>
-
-              <div>
-                <strong>Meters:</strong> {meters}
-              </div>
-
-              <div>
-                <strong>In w.g (Pa):</strong> {inWGPa}
-              </div>
-
-              <div>
-                <strong>In w.g (KPa):</strong> {inWGKPa}
-              </div>
-
-              <div>
-                <strong>In w.g (mm w.g):</strong> {inWGMmWG}
-              </div>
+            <div className="text-center">
+              <button className="btn btn-primary" onClick={convertValues}>
+                Convert
+              </button>
+              <button className="btn btn-secondary ml-2" onClick={resetValues}>
+                Reset
+              </button>
             </div>
+          </div>
 
-            <div className="col-md-6">
-              <div>
-                <strong>CFM:</strong> {cfm}
-              </div>
-
-              <div>
-                <strong>m³/s:</strong> {m3s}
-              </div>
-
-              <div>
-                <strong>cu.ft:</strong> {cuft}
-              </div>
-
-              <div>
-                <strong>KPa:</strong> {kpa}
-              </div>
-
-              <div>
-                <strong>Pa mm w.g:</strong> {pamwg}
-              </div>
-
-              <div>
-                <strong>ft/min:</strong> {ftmin}
-              </div>
+          <div>
+            <h3>Conversion Results</h3>
+            <div>
+              <strong>Inches:</strong> {inches}
+            </div>
+            <div>
+              <strong>Meters:</strong> {meters}
+            </div>
+            <div>
+              <strong>In w.g (Pa):</strong> {inWGPa}
+            </div>
+            <div>
+              <strong>In w.g (KPa):</strong> {inWGKPa}
+            </div>
+            <div>
+              <strong>In w.g (mm w.g):</strong> {inWGMmWG}
+            </div>
+            <div>
+              <strong>CFM:</strong> {cfm}
+            </div>
+            <div>
+              <strong>m³/s:</strong> {m3s}
+            </div>
+            <div>
+              <strong>cu.ft:</strong> {cuft}
+            </div>
+            <div>
+              <strong>KPa:</strong> {kpa}
+            </div>
+            <div>
+              <strong>Pa mm w.g:</strong> {pamwg}
+            </div>
+            <div>
+              <strong>ft/min:</strong> {ftmin}
             </div>
           </div>
         </div>

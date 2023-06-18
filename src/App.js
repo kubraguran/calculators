@@ -5,6 +5,10 @@ import AirCalc from './components/AirCalc';
 import AirDensity from './components/AirDensity';
 import AirVelocity from './components/AirVelocity';
 import Converter from './components/Convertor';
+import Weather from './components/Weather';
+import Osha from './components/Osha';
+import Earthquake from './components/Earthquake';
+import Drops from './components/Drops';
 
 function App() {
   return (
@@ -30,8 +34,19 @@ function App() {
         <Converter/>
         </Col>
         <Col>
-        he
+        <Osha/>
         </Col>
+      </Row>
+      <Row>
+      <Col>
+        <Weather/>
+        </Col>
+        <Col>
+         <Earthquake />
+        </Col>
+      </Row>
+      <Row>
+        <Drops/>
       </Row>
     </Container>
   );
