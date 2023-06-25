@@ -28,8 +28,12 @@ function Osha() {
     <div className="container">
       <div className="row">
         <div className="col-lg-6 mx-auto">
+        <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
           <h5>Injury and Illness Incidence Rate Calculator</h5>
-
           <div className="form-group">
             <br />
             <label htmlFor="injuriesAndIllnesses">Number of injuries and illnesses:</label>

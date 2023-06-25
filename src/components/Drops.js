@@ -14,13 +14,11 @@ const Drops = () => {
   };
 
   const calculateConsequence = () => {
-    // Placeholder calculations for the graph data
+  
     const graphData = [];
     for (let i = 0; i <= 10; i++) {
       const x = i;
-      const y = weight * i * size; // Placeholder formula, adjust according to your calculation logic
-
-      // Determine severity level based on y value
+      const y = weight * i * size; 
       let severity;
       if (y >= 100 && y < 1000) {
         severity = 'danger';
@@ -55,7 +53,11 @@ const Drops = () => {
 
   return (
     <div className="container text-center">
-    <h2 className="calculator-title">Dropped Object Consequence Calculator</h2>
+       <br/>
+         <br/>
+         <br/>
+    <h5 className="calculator-title">Dropped Object Consequence Calculator</h5>
+   
     <div className="row justify-content-center">
       <div className="col-lg-4">
         <div className="form-group">
@@ -63,7 +65,7 @@ const Drops = () => {
           <div className="input-group">
             <input type="number" id="weight" value={weight} onChange={handleWeightChange} className="form-control" />
             <div className="input-group-append">
-              <select className="form-control form-control-sm">
+              <select className="form-control form-control-m">
                 <option value="kg">kg</option>
                 <option value="lb">lb</option>
               </select>
@@ -77,7 +79,7 @@ const Drops = () => {
           <div className="input-group">
             <input type="number" id="size" value={size} onChange={handleSizeChange} className="form-control" />
             <div className="input-group-append">
-              <select className="form-control form-control-sm">
+              <select className="form-control form-control-m">
                 <option value="m">m</option>
                 <option value="ft">ft</option>
               </select>
@@ -86,7 +88,9 @@ const Drops = () => {
         </div>
       </div>
     </div>
-      <div className="chart-container">
+    <br/>
+    <br/>
+      <div className="chart-container mt-5" style={{marginLeft: 110}}>
         <LineChart width={1000} height={400} data={graphData} margin={{ right: 30, left: 20, bottom: 10 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="x" />

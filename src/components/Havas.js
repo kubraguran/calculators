@@ -75,11 +75,14 @@ function Havas() {
 
   return (
     <div className="container">
- 
       <div className="row">
         
         <div className="col-lg-6 mx-auto">
+        <br/>
+         <br/>
+         <br/>
         <h5>Havas Calculator</h5>
+        
           <div className="my-4">
             <div className="form-group">
               <label htmlFor="time">Time:</label>
@@ -127,3 +130,5 @@ function Havas() {
 }
 
 export default Havas;
+
+
